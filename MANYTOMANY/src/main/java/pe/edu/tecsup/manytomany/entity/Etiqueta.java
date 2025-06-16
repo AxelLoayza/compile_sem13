@@ -34,5 +34,11 @@ public class Etiqueta {
         this.nombre = nombre;
     }
 
+    public Etiqueta() {}
+
+    public Etiqueta(String nombre) {
+        this.nombre = nombre;
+    }
+
 
 }
