@@ -49,7 +49,10 @@ const Home = () => {
   return (
     <div className="container mt-4">
       <header className="d-flex justify-content-between align-items-center mb-4">
-        <Header/>
+        <div>
+            <Header/>
+        </div>
+        
         <h1>Productos</h1>
         <button className="btn btn-success" onClick={() => navigate("/form")}>
           Nuevo Producto
