@@ -7,6 +7,8 @@ import { deleteProducto } from "../services/productService";
 import Item from "../components/item";
 import { useNavigate } from "react-router-dom";
 import ItemList from "../components/ItemList";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 const Home = () => {
@@ -47,12 +49,19 @@ const Home = () => {
   return (
     <div className="container mt-4">
       <header className="d-flex justify-content-between align-items-center mb-4">
+        <Header/>
         <h1>Productos</h1>
         <button className="btn btn-success" onClick={() => navigate("/form")}>
           Nuevo Producto
         </button>
       </header>
-      <ItemList productos={productos} onDelete={handleDelete} />
+      <div>
+        <ItemList productos={productos} onDelete={handleDelete} />
+      </div>
+      <footer>
+        <Footer/>
+      </footer>
+      
     </div>
   );
 };
