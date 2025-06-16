@@ -9,7 +9,7 @@ import pe.edu.tecsup.manytomany.entity.Etiqueta;
 import pe.edu.tecsup.manytomany.repository.EtiquetaRepository;
 
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:5173")
+
 @RestController
 @RequestMapping("/api/etiquetas")
 public class EtiquetaController {

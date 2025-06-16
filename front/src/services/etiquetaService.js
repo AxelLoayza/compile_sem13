@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8080/api/etiquetas"; // ← sin slash al final
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/etiquetas`;
+ // ← sin slash al final
 
 const fetchAPI = async (endpoint = "", options = {}) => {
   const url = endpoint ? `${API_URL}/${endpoint}` : API_URL;
